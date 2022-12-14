@@ -1,0 +1,70 @@
+
+*{
+}
+body{
+    
+    font-family: 'Muli';
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #f0f0f0;
+}
+
+.faq{
+    border: solid 1px rgb(112, 112, 112);
+    border-radius: 8px;
+    width: 550px;
+    padding: 10px 30px;
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.faq.active{
+display: flex;
+flex-direction: column;
+}
+.faq-toggle-text{
+    display: none;
+}
+.active{
+    background: rgb(2,0,36);
+    background: linear-gradient(150deg, rgba(67, 255, 211, 0.564) 0%, rgb(229, 255, 250) 15%, rgb(255, 255, 255) 100%);}
+.faq.active>.faq-text{
+    display: block;
+}
+.faq-text{
+    display: none;
+}
+.faq.active>button>.fa-times{
+    display: block;
+}
+.faq.active>button>.fa-chevron-down{
+    display: none;
+}
+.fa-times{
+    display: none;
+}
+.fa-chevron-down{
+    display: block;
+    cursor: pointer;
+}
+.faq-toggle{
+    border: none;
+}
+.faq.active>button{
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    position:relative;
+    left: 530px;
+    bottom: 90px;
+    cursor: pointer;
+    background-color: #9fa4a8;
+    color: white;
+    font-size: 15px;
+}
